@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'SEGA LOGO FONT';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SEGA LOGO FONT"), url("../style/SEGA.woff") format("woff"); }
+
+.main-heading {
+  font-family: 'SEGA LOGO FONT', 'sans-serif';
+  display: block;
+  max-width: 70rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 2rem 1rem;
+  line-height: 5rem; }
+
+.search-box-container {
+  width: 75vw; }
+
+.search-box {
+  width: 100%;
+  height: 5rem;
+  margin: 2rem 1rem; }
+  .search-box input {
+    width: 80%;
+    height: 100%;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    text-align: center; }
+
+.Loding-heading {
+  font-family: 'SEGA LOGO FONT', 'sans-serif';
+  font-size: 3rem;
+  margin: 5rem;
+  text-align: center; }
+
+.section-home {
+  display: flex;
+  flex-wrap: wrap; }
+  .section-home .book {
+    width: 20rem;
+    height: 25rem;
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-transform: capitalize;
+    background-color: black;
+    color: #eee;
+    transition: all .3s; }
+    .section-home .book h4 {
+      font-size: 1.4rem; }
+    .section-home .book h5 {
+      font-size: 1rem;
+      font-weight: 100; }
+    .section-home .book:hover {
+      transform: scale(1.1); }
+
+.section-second {
+  display: flex;
+  flex-wrap: wrap; }
+  .section-second__book {
+    width: 40rem;
+    height: 50rem;
+    border: 1px solid black;
+    padding: 2rem;
+    margin: 1rem;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+    color: #eee; }
+    .section-second__book h2 {
+      font-size: 5rem; }
+    .section-second__book h4 {
+      font-size: 2rem; }
+    .section-second__book h5 {
+      font-size: 1.8rem; }
+  .section-second__details {
+    padding: 1rem;
+    margin-left: 2rem;
+    line-height: 2.6rem;
+    text-transform: capitalize; }
+    .section-second__details h2 {
+      font-size: 2rem; }
+    .section-second__details h3 {
+      font-size: 1.8rem;
+      font-weight: 100;
+      font-family: 'Arial', 'sans-serif';
+      transition: all .3s; }
+      .section-second__details h3:hover {
+        letter-spacing: .2rem;
+        background-color: black;
+        color: #eee; }
