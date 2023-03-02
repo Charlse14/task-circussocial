@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import thunkMiddleware from 'redux-thunk';
@@ -14,14 +14,14 @@ const rootReducer = combineReducers({ searchBooks, requestBooks })
 
 const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-
-ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter><Provider store={store} ><App /></Provider></BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
+root.render(
+<React.StrictMode>
+  <BrowserRouter><Provider store={store} ><App /></Provider></BrowserRouter>
+</React.StrictMode>
 );
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

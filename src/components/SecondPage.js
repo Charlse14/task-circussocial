@@ -4,9 +4,8 @@ import BookDetails from './BookDetails';
 
 
 const  SecondPage = ({book, colorid}) => {
-
 	return (
-
+		
 		<div className="section-second">
 			<SpecialBook  book={book} colorid={colorid}/>  	
 		  	<BookDetails  book={book} />  
